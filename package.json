@@ -1,0 +1,17 @@
+{
+  "name": "three-esbuild",
+  "version": "1.0.0",
+  "description": "Threejs with esbuild",
+  "scripts": {
+    "dev": "esbuild src/js/main.js --bundle --outfile=dist/app.js --serve=8000 --servedir=dist --sourcemap",
+    "build": "esbuild src/js/main.js --bundle --minify --outfile=dist/app.js "
+  },
+  "author": "Felix  Turner",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.128.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.14"
+  }
+}
